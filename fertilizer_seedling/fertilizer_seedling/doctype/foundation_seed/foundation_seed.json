@@ -1,0 +1,182 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{university_name}-{####}",
+ "creation": "2023-12-27 11:38:07.765126",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_bqvko",
+  "date",
+  "section_break_x4tcu",
+  "university_name",
+  "crop_type",
+  "sowing_method",
+  "column_break_le3km",
+  "university_batch_id",
+  "crop",
+  "irrigation_type",
+  "column_break_wz2ey",
+  "season",
+  "crop_variety",
+  "yield",
+  "column_break_2x877",
+  "duration_time",
+  "cost_price_kg",
+  "uom",
+  "section_break_ltxeb",
+  "internal_operations",
+  "fertilizers",
+  "pesticides"
+ ],
+ "fields": [
+  {
+   "fieldname": "university_name",
+   "fieldtype": "Link",
+   "label": "University Name",
+   "options": "University Names"
+  },
+  {
+   "fieldname": "crop_type",
+   "fieldtype": "Link",
+   "label": "Crop Type",
+   "options": "Crop Type"
+  },
+  {
+   "fieldname": "crop",
+   "fieldtype": "Link",
+   "label": "Crop",
+   "options": "Item"
+  },
+  {
+   "fieldname": "crop_variety",
+   "fieldtype": "Link",
+   "label": "Crop Variety",
+   "options": "Crop Variety"
+  },
+  {
+   "fieldname": "season",
+   "fieldtype": "Link",
+   "label": "Season",
+   "options": "Season"
+  },
+  {
+   "fieldname": "sowing_method",
+   "fieldtype": "Link",
+   "label": "Sowing Method",
+   "options": "Sowing Method"
+  },
+  {
+   "fieldname": "irrigation_type",
+   "fieldtype": "Link",
+   "label": "Irrigation Type",
+   "options": "Irrigation Type"
+  },
+  {
+   "fieldname": "fertilizers",
+   "fieldtype": "Table",
+   "label": "Fertilizer Application",
+   "options": "Fertilizer Child Table"
+  },
+  {
+   "fieldname": "pesticides",
+   "fieldtype": "Table",
+   "label": "Pesticides",
+   "options": "Pesticide Child Table"
+  },
+  {
+   "fieldname": "internal_operations",
+   "fieldtype": "Table",
+   "label": "Operations",
+   "options": "Internal Operation Child Table"
+  },
+  {
+   "fieldname": "column_break_2x877",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ltxeb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_wz2ey",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_le3km",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "yield",
+   "fieldtype": "Data",
+   "label": "Yield"
+  },
+  {
+   "fieldname": "duration_time",
+   "fieldtype": "Data",
+   "label": "Duration Time for Grow(In Days)"
+  },
+  {
+   "fieldname": "university_batch_id",
+   "fieldtype": "Data",
+   "label": "University Batch ID",
+   "unique": 1
+  },
+  {
+   "fieldname": "section_break_x4tcu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_bqvko",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cost_price_kg",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Cost Price /kg",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-03 16:11:32.481295",
+ "modified_by": "Administrator",
+ "module": "fertilizer_seedling",
+ "name": "Foundation Seed",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "crop_type , crop , crop_variety",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
